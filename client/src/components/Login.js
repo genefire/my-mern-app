@@ -1,29 +1,33 @@
+import '../assets/css/login.css';
+
 const Login = () =>{
     return (
-        <div className="container">
-            <div className="row align-items-center"> 
-               <div className="w-50 m-auto mt-5 ">                
-                    <div class="card">
-                        <div class="card-header">
+       
+            <div className='container'>
+               <div className='row justify-content-center align-items-center min-vertical-height '>
+                    <div class="card w-50">
+                        <div className="card-header">
                             Login
                         </div>
-                        <div class="card-body">
+                        <div className="card-body">
                             <form>           
-                                <div class="mb-3">
-                                    <label for="formGroupExampleInput" class="form-label">Username</label>
-                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Username" />
+                                <div className="mb-3">
+                                    <label for="formGroupExampleInput" className="form-label">Username</label>
+                                    <input type="text" className="form-control" id="formGroupExampleInput" placeholder="Username" />
                                     </div>
-                                    <div class="mb-3">
-                                    <label for="formGroupExampleInput2" class="form-label">Password</label>
-                                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Password" />
+                                    <div className="mb-3">
+                                    <label for="formGroupExampleInput2" className="form-label">Password</label>
+                                    <input type="text" className="form-control" id="formGroupExampleInput2" placeholder="Password" />
                                 </div>
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="submit" className="btn btn-primary">Submit</button>
                             </form>  
                         </div>
                     </div> 
                </div>
             </div>
-        </div>
+                 
+                   
+          
     );
 }
 export default Login;

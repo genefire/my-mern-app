@@ -1,31 +1,64 @@
+import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import { faPenToSquare, faPrint } from '@fortawesome/free-solid-svg-icons';
+import face from '../assets/images/face1.jpg';
+
 const Members = () =>{
     return (
-        <div className="d-flex flex-row flex-shrink-1">
-            <div className="card col-sm-4 m-1">
-                <img src="..." className="card-img-top" alt="..." />
+        <>       
+          <div className='row flex-row pb-4 mt-3 align-items-left justify-content-between'>
+            <h4 className='w-25'>Members</h4>
+            
+            <hr className='mt-3' />
+          </div>
+          <div className='row'>
+           
+              <div className="card">
                 <div className="card-body">
-                    <h5 className="card-title">Card title</h5>
-                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    
+                  <div className="table-responsive">
+                    <table className="table table-hover table-font-size">
+                      <thead>
+                        <tr>
+                          <th scope="col"> Name </th>
+                          <th scope="col"> Address </th>
+                          <th scope="col"> Contact Number </th>
+                          <th scope="col"> Status </th>
+                          <th scope="col"> Modified By</th>
+                          <th scope="col"> Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                            <td> <img src={face} className="me-2" alt="image1" /> David Grey </td>
+                            <td>  No. 333 Antonio Street corner Burgos Avenue </td>
+                            <td> +6391234567123  </td>
+                            <td> <label className="badge badge bg-primary">DONE</label> </td>
+                            <td> January 1, 2000 </td>
+                            <td>  <FontAwesomeIcon icon={faPenToSquare} />  <FontAwesomeIcon icon={faPrint} /></td>
+                        </tr>
+                        <tr>
+                            <td> <img src={face} className="me-2" alt="image1" /> David Grey </td>
+                            <td>  No. 333 Antonio Street corner Burgos Avenue </td>
+                            <td> +6391234567123  </td>
+                            <td> <label className="badge badge bg-primary">DONE</label> </td>
+                            <td> January 1, 2000 </td>
+                            <td>  <FontAwesomeIcon icon={faPenToSquare} />  <FontAwesomeIcon icon={faPrint} /></td>
+                        </tr>
+                        <tr>
+                            <td><img src={face} className="me-2" alt="image1" /> David Grey </td>
+                            <td>  No. 333 Antonio Street corner Burgos Avenue </td>
+                            <td> +6391234567123  </td>
+                            <td> <label className="badge badge bg-primary">DONE</label> </td>
+                            <td> January 1, 2000 </td>
+                            <td>  <FontAwesomeIcon icon={faPenToSquare} />  <FontAwesomeIcon icon={faPrint} /></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
-            </div>
-            <div className="card col-sm-4 m-1">
-                <img src="..." className="card-img-top" alt="..." />
-                <div className="card-body">
-                    <h5 className="card-title">Card title</h5>
-                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    
-                </div>
-            </div>
-            <div className="card col-sm-4 m-1">
-                <img src="..." className="card-img-top" alt="..." />
-                <div className="card-body">
-                    <h5 className="card-title">Card title</h5>
-                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    
-                </div>
-            </div>
-        </div>
+              </div>
+          </div>
+       
+        </>
     );
 }
 export default Members;

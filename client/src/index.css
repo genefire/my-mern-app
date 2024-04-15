@@ -35,3 +35,7 @@ min-height: calc(100vh - 70px);
     height: 36px;
     border-radius: 100%;
 }
+
+.table-font-size{
+  font-size:13px;
+}
